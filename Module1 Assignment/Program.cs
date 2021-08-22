@@ -19,8 +19,11 @@ namespace Module1_Assignment
             Console.WriteLine(suger + " Suger");
             Console.WriteLine(caffine + "mg Caffine");
             Console.WriteLine("Press any key to continue....");
-           
-        
+    
+
+
+
+
         }
     }
 }
