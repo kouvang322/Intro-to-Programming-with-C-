@@ -1,0 +1,16 @@
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\bin\Debug\net5.0\Module1 Lab.exe
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\bin\Debug\net5.0\Module1 Lab.deps.json
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\bin\Debug\net5.0\Module1 Lab.runtimeconfig.json
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\bin\Debug\net5.0\Module1 Lab.runtimeconfig.dev.json
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\bin\Debug\net5.0\Module1 Lab.dll
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\bin\Debug\net5.0\ref\Module1 Lab.dll
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\bin\Debug\net5.0\Module1 Lab.pdb
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.csproj.AssemblyReference.cache
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.AssemblyInfoInputs.cache
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.AssemblyInfo.cs
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.csproj.CoreCompileInputs.cache
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.dll
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\ref\Module1 Lab.dll
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.pdb
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module1 Lab\obj\Debug\net5.0\Module1 Lab.genruntimeconfig.cache
