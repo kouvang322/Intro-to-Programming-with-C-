@@ -21,17 +21,21 @@ namespace Module2_Lab
 			{
 				Console.WriteLine(amountNum + " ml is " + $"{(amountNum/4.929):n1}" + " Teaspoons");
 			}
-			if (typeConvert == 2)
+			else if (typeConvert == 2)
 			{
 				Console.WriteLine(amountNum + " ml is " + $"{(amountNum/14.787):n1}" + " Tablespoons");
 			}
-			if (typeConvert == 3)
+			else if (typeConvert == 3)
 			{
 				Console.WriteLine(amountNum + " ml is " + $"{(amountNum/240.0):n1}" + " Cups");
 			}
-			if (typeConvert == 4)
+			else if (typeConvert == 4)
 			{
 				Console.WriteLine(amountNum + " ml is " + $"{(amountNum/946.0):n1}" + " Quarts");
+			}
+			else
+			{
+				Console.WriteLine("No type was of conversion was selected");
 			}
 		}
     }
