@@ -17,7 +17,6 @@ namespace Module3_Lab
             string daysTravel = (Console.ReadLine());
 
             int.TryParse(daysTravel, out userEnteredDays);
-            //int daysTravel = Convert.ToInt32(Console.ReadLine());
 
             if (int.TryParse(daysTravel, out userEnteredDays) == false)
             {
