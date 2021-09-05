@@ -10,25 +10,50 @@ namespace Module3_Lab
     {
         static void Main(string[] args)
         {
+            int userEnteredDays;
+            int userEnteredMinutes;
+
             Console.Write("How many days will you be traveling? ");
-            int daysTravel = Convert.ToInt32(Console.ReadLine());
+            string daysTravel = (Console.ReadLine());
 
-            Console.WriteLine("How many minutes per day will you use? ");
-            int useMinutes = Convert.ToInt32(Console.ReadLine());
+            int.TryParse(daysTravel, out userEnteredDays);
+            //int daysTravel = Convert.ToInt32(Console.ReadLine());
 
-            double bigDayPass = bigDayPrice(daysTravel);
-            double touristPass = touristPassPrice(useMinutes, daysTravel);
-            double adventurePass = calculateAdventureMinutesPackage(useMinutes, daysTravel);
+            if (int.TryParse(daysTravel, out userEnteredDays) == false)
+            {
+                Console.Write("Please enter number of days you will be traveling. ");
+                Console.Read();
+            }
+            else
+            {
+                Console.WriteLine("How many minutes per day will you use? ");
+                string useMinutes = (Console.ReadLine());
+                
+                int.TryParse(useMinutes, out userEnteredMinutes);
 
-            Console.WriteLine($"The Big Day Pass would cost you {bigDayPass:c2}");
-            Console.WriteLine($"The Tourist Pass would cost you {touristPass:c2}");
-            Console.WriteLine($"The Adventure Pass would cost you {adventurePass:c2}");
+                if (int.TryParse(useMinutes, out userEnteredMinutes) == false)
+                {
+                    Console.Write("Please enter how many minutes you will use per day. ");
+                    Console.Read();
+                }
+                else
+                {
+                double bigDayPass = bigDayPrice(userEnteredDays);
+                double touristPass = touristPassPrice(userEnteredMinutes, userEnteredDays);
+                double adventurePass = calculateAdventureMinutesPackage(userEnteredMinutes, userEnteredDays);
 
-            //At the end of the program we want to see this
+                Console.WriteLine($"The Big Day Pass would cost you {bigDayPass:c2}");
+                Console.WriteLine($"The Tourist Pass would cost you {touristPass:c2}");
+                Console.WriteLine($"The Adventure Pass would cost you {adventurePass:c2}");
 
-            Console.WriteLine(calculateBestPrice(bigDayPass, touristPass, adventurePass));
+                //At the end of the program we want to see this
 
-            Console.Read();
+                Console.WriteLine(calculateBestPrice(bigDayPass, touristPass, adventurePass));
+
+                Console.Read();
+
+                }
+            }
         }
 
         // calculate Big Day pass : $10 per day, unlimited minutes
@@ -55,17 +80,35 @@ namespace Module3_Lab
             string cheapestPackage = "";
             //lets assume that at the end of our magic logic, we get the lowest number. 
 
+            if (bDP == tP)
+            {
+                cheapestPrice = bDP;
+                cheapestPackage = "Big Day Pass or Tourist Pass";
+            }
+
+            if (bDP == aP)
+            {
+                cheapestPrice = bDP;
+                cheapestPackage = "Big Day Pass or Adventure Pass";
+            }
+
+            if (aP == tP)
+            {
+                cheapestPrice = aP;
+                cheapestPackage = "Tourist Pass or Adventure";
+            }
+
             if (bDP < tP && bDP < aP)
             {
                 cheapestPrice = bDP;
                 cheapestPackage = "Big Day Pass";
             }
-            else if (tP < bDP && tP < aP)
+            if (tP < bDP && tP < aP)
             {
                 cheapestPrice = tP;
                 cheapestPackage = "Tourist Pass";
             }
-            else if (aP < bDP && aP < tP)
+            if (aP < bDP && aP < tP)
             {
                 cheapestPrice = aP;
                 cheapestPackage = "Adventure Pass";
