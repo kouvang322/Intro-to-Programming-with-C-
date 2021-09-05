@@ -1,0 +1,7 @@
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module3 Lab\Module3 Lab\bin\Debug\Module3 Lab.exe.config
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module3 Lab\Module3 Lab\bin\Debug\Module3 Lab.exe
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module3 Lab\Module3 Lab\bin\Debug\Module3 Lab.pdb
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module3 Lab\Module3 Lab\obj\Debug\Module3 Lab.csproj.AssemblyReference.cache
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module3 Lab\Module3 Lab\obj\Debug\Module3 Lab.csproj.CoreCompileInputs.cache
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module3 Lab\Module3 Lab\obj\Debug\Module3 Lab.exe
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module3 Lab\Module3 Lab\obj\Debug\Module3 Lab.pdb
