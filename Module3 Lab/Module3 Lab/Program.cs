@@ -37,9 +37,9 @@ namespace Module3_Lab
                 }
                 else
                 {
-                double bigDayPass = bigDayPrice(userEnteredDays);
-                double touristPass = touristPassPrice(userEnteredMinutes, userEnteredDays);
-                double adventurePass = calculateAdventureMinutesPackage(userEnteredMinutes, userEnteredDays);
+                double bigDayPass = BigDayPrice(userEnteredDays);
+                double touristPass = TouristPassPrice(userEnteredMinutes, userEnteredDays);
+                double adventurePass = CalculateAdventureMinutesPackage(userEnteredMinutes, userEnteredDays);
 
                 Console.WriteLine($"The Big Day Pass would cost you {bigDayPass:c2}");
                 Console.WriteLine($"The Tourist Pass would cost you {touristPass:c2}");
@@ -47,7 +47,7 @@ namespace Module3_Lab
 
                 //At the end of the program we want to see this
 
-                Console.WriteLine(calculateBestPrice(bigDayPass, touristPass, adventurePass));
+                Console.WriteLine(CalculateBestPrice(bigDayPass, touristPass, adventurePass));
 
                 Console.Read();
 
@@ -56,24 +56,24 @@ namespace Module3_Lab
         }
 
         // calculate Big Day pass : $10 per day, unlimited minutes
-        static int bigDayPrice(int days)
+        static int BigDayPrice(int days)
         {
             return 10 * days;
         }
 
         // calculate Tourist pass : $0.20 per minute
-        static double touristPassPrice(int minutes, int days)
+        static double TouristPassPrice(int minutes, int days)
         {
             return .20 * (days * minutes);
         }
 
         //The Adventurer Pass: $3 per day and $0.10 per minute
-        static double calculateAdventureMinutesPackage(int minutes, int days)
+        static double CalculateAdventureMinutesPackage(int minutes, int days)
         {
             return (.10 * (days * minutes)) + (3 * days);
         }
 
-        static string calculateBestPrice(double bDP, double tP, double aP)
+        static string CalculateBestPrice(double bDP, double tP, double aP)
         {
             double cheapestPrice = 0;
             string cheapestPackage = "";
