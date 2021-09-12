@@ -103,7 +103,7 @@ namespace Module4_Assignment
 
             for (int i = start; i <= ending; i++)
             {
-                if (i % 2 == 0)
+                if (i % 2 != 0)
                 {
                     oddCount++;
                 }
