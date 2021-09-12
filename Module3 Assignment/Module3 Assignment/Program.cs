@@ -50,8 +50,6 @@ namespace Module3_Assignment
                         int yogaPoints = YogaClassPoints(Convert.ToInt32(yogaClassesAttended));
                         Console.WriteLine("You earned " + yogaPoints + " points from yoga classes");
 
-      
-                        
                         Console.WriteLine("How many aerobics classes did you attend? ");
                         string aerobicsClassesAttended = (Console.ReadLine());
                         userInputIsValid = int.TryParse(aerobicsClassesAttended, out int y);
