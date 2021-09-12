@@ -35,7 +35,7 @@ namespace Module4_Assignment
             int evenNumCount = CalculateNumberOfEvens(startNum, endingNum);
             int oddNumCount = CalculateNumberOfOdds(startNum, endingNum);
 
-            CompletedCountOfEvenAndOddNums(evenNumCount, oddNumCount);
+            PrintOutEvenAndOddNumberCount(evenNumCount, oddNumCount);
 
             Console.Read();
         }
@@ -77,7 +77,7 @@ namespace Module4_Assignment
             return endingNumInput;
         }
 
-        public static void CompletedCountOfEvenAndOddNums(int evenCount, int oddCount)
+        public static void PrintOutEvenAndOddNumberCount(int evenCount, int oddCount)
         {
             Console.WriteLine("Number of even numbers: " + evenCount);
             Console.WriteLine("Number of odd numbers: " + oddCount);
