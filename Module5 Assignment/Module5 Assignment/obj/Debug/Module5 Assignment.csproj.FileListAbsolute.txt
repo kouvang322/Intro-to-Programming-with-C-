@@ -1,0 +1,7 @@
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module5 Assignment\Module5 Assignment\obj\Debug\Module5 Assignment.csproj.AssemblyReference.cache
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module5 Assignment\Module5 Assignment\obj\Debug\Module5 Assignment.csproj.CoreCompileInputs.cache
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module5 Assignment\Module5 Assignment\bin\Debug\Module5 Assignment.exe.config
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module5 Assignment\Module5 Assignment\bin\Debug\Module5 Assignment.exe
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module5 Assignment\Module5 Assignment\bin\Debug\Module5 Assignment.pdb
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module5 Assignment\Module5 Assignment\obj\Debug\Module5 Assignment.exe
+C:\Users\Kouva\Repo\WCTC\Intro-to-Programming-with-C-\Module5 Assignment\Module5 Assignment\obj\Debug\Module5 Assignment.pdb
