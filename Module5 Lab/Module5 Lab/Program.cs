@@ -26,9 +26,6 @@ namespace Module5_Lab
             dayOfUFOSightings[3] = "Thursday";
             dayOfUFOSightings[4] = "Friday";
 
-
-
-
             Array.Sort(numUFOSightings, dayOfUFOSightings);
 
             for (int i = 0; i < 5; i++)
