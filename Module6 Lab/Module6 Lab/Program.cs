@@ -10,23 +10,45 @@ namespace Module6_Lab
     {
         static void Main(string[] args)
         {
-            int[,] nums =
-                    {
-                        {2, 4, 5},
-                        {6, 1, 0},
-                        {9, 11, 6},
-                        {12, 5, 13}
-                    };
+           
 
-            for (int row = 0; row < 4; row++)
+            List<Recipe> recipeList = new List<Recipe>();
+
+            string usersChoice = GetValidChoiceInput();
+            while (usersChoice != "N")
             {
-                for (int col = 0; col < 3; col++)
-                {
-                    Console.Write($"{nums[row,col]}\t");
-                }
-                Console.WriteLine();
+                Console.Write("Enter recipe name: ");
+                string recipeName = Console.ReadLine();
+                Recipe myRecipes = new Recipe(recipeName);
+                recipeList.Add(myRecipes);
+                myRecipes.AddRecipeIngredients();
+                usersChoice = GetValidChoiceInput();
             }
-                Console.Read();
+
+            for (int i = 0; i < recipeList.Count; i++)
+            {
+                Recipe listRecipes = recipeList[i];
+                Console.WriteLine(listRecipes.ToString());
+            }
+
+            Console.Read();
         }
+          
+
+        public static string GetValidChoiceInput()
+        {
+            Console.Write("Enter another recipe? (Y/N) ");
+
+            string userInput = Console.ReadLine().ToUpper();
+
+            while (userInput.Length > 1 && userInput != "Y" && userInput != "N")
+            {
+                Console.WriteLine("Please enter a letter that matches an availiable option.");
+                Console.Write("Enter another recipe? (Y/N) ");
+                userInput = Console.ReadLine().ToUpper();
+            }
+            return userInput;
+        }
+
     }
 }
