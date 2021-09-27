@@ -121,6 +121,7 @@ namespace Module3_Assignment
             return yogaPoints;
         }
 
+
         //Caluculating points from aerobics classes attended
         static int AerobicsClassPoints(int aerobicsClass)
         {
