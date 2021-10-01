@@ -36,7 +36,6 @@ namespace Module6_Lab
 
             while (ingredientName != "NA")
             {
-
                 ingredientQuantity = GetValidIntQuantity();
 
                 Console.Write("Measurement: ");
@@ -71,7 +70,6 @@ namespace Module6_Lab
             }
             return userInput;
         }
-
         public static string GetValidIngredientInput()
         {
             Console.Write("Ingredient (NA when done): ");
