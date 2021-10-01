@@ -19,11 +19,15 @@ namespace Module6_Assignment
             pricePerUnit = myPricePerUnit;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return String.Format($"{item} {pricePerUnit:c2}");
         }
 
+        public string toReportString()
+        {
+            return string.Format($"{quantityInMachine} {item}");
+        }
         public string GetItem()
         {
             return item;
@@ -43,7 +47,6 @@ namespace Module6_Assignment
         {
             return pricePerUnit;
         }
-
         public void SetItem(string myItem)
         {
             item = myItem;
@@ -56,7 +59,6 @@ namespace Module6_Assignment
                 quantityInMachine = myQuantityInMachine;
             }
         }
-
         public void SetPricePerUnit(double myPricePerUnit)
         {
             if (myPricePerUnit > 0)

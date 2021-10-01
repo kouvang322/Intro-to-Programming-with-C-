@@ -19,7 +19,7 @@ namespace Module6_Lab
             measurementType = myMeasurement;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return String.Format($"{quantity} {measurementType} {ingredient}");
         }

@@ -57,7 +57,7 @@ namespace Module6_Assignment
             for (int i = 0; i < vendItemList.Count; i++)
             {
                 Item vendingMachineList = vendItemList[i];
-                Console.WriteLine($"{vendItemList[i].GetQuantityInMachine()} {vendItemList[i].GetItem()}");
+                Console.WriteLine(vendingMachineList.toReportString());
             }
             
             Console.WriteLine($"{totalSalesCost:c2} collected from sales");
@@ -111,7 +111,6 @@ namespace Module6_Assignment
 
             return priceNumInput;
         }
-
 
         public static int GetValidItemBuyOption()
         {

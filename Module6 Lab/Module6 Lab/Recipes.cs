@@ -16,7 +16,7 @@ namespace Module6_Lab
             recipeName = name;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             var str = recipeName + "\n";
             for (int i = 0; i < recipesList.Count; i++)
