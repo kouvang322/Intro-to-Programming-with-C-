@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module6_Lab
+namespace Module7_Lab
 {
-    public class Recipe
+    public class Recipes
     {
-        private List<Ingredients> recipesList = new List<Ingredients>();
+        private List<Ingredients> ingredientsList = new List<Ingredients>();
 
         private string recipeName;
-        public Recipe(string name)
+        public Recipes(string name)
         {
             recipeName = name;
         }
@@ -19,16 +19,16 @@ namespace Module6_Lab
         public override string ToString()
         {
             var str = recipeName + "\n";
-            for (int i = 0; i < recipesList.Count; i++)
+            for (int i = 0; i < ingredientsList.Count; i++)
             {
-                Ingredients listRecipes = recipesList[i];
-                str += listRecipes.ToString() + "\n";
+                Ingredients listIngredients = ingredientsList[i];
+                str += listIngredients.ToString() + "\n";
             }
             return str;
         }
         public void AddRecipeIngredients()
         {
-            
+
             int ingredientQuantity;
             string ingredientMeasureType;
 
@@ -41,19 +41,18 @@ namespace Module6_Lab
                 Console.Write("Measurement: ");
                 ingredientMeasureType = Console.ReadLine();
                 Ingredients ingredientsInformation = new Ingredients(ingredientName, ingredientQuantity, ingredientMeasureType);
-                recipesList.Add(ingredientsInformation);
+                ingredientsList.Add(ingredientsInformation);
 
                 ingredientName = GetValidIngredientInput();
             }
 
-
         }
         public void ListRecipes()
         {
-            for (int i = 0; i < recipesList.Count; i++)
+            for (int i = 0; i < ingredientsList.Count; i++)
             {
-                Ingredients listRecipes = recipesList[i];
-                Console.WriteLine(listRecipes.ToString());
+                Ingredients listIngredients = ingredientsList[i];
+                Console.WriteLine(listIngredients.ToString());
             }
         }
         public static string GetValidChoiceInput()
@@ -99,7 +98,6 @@ namespace Module6_Lab
 
             return quantityNumInput;
         }
-    
-    }
 
+    }
 }
